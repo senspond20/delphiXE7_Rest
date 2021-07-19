@@ -2,8 +2,8 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = 'Main'
-  ClientHeight = 676
-  ClientWidth = 885
+  ClientHeight = 643
+  ClientWidth = 848
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,18 +11,19 @@ object MainForm: TMainForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
     Left = 24
-    Top = 24
+    Top = 29
     Width = 20
     Height = 13
     Caption = 'Url :'
   end
   object SendBtn: TButton
-    Left = 368
-    Top = 19
+    Left = 352
+    Top = 24
     Width = 75
     Height = 25
     Caption = 'Send'
@@ -30,10 +31,10 @@ object MainForm: TMainForm
     OnClick = SendBtnClick
   end
   object DBGrid: TDBGrid
-    Left = 8
-    Top = 379
-    Width = 841
-    Height = 273
+    Left = -1
+    Top = 348
+    Width = 602
+    Height = 213
     Options = [dgEditing, dgAlwaysShowEditor, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
@@ -43,9 +44,9 @@ object MainForm: TMainForm
     TitleFont.Style = []
   end
   object ResMessage: TRichEdit
-    Left = 480
-    Top = 152
-    Width = 369
+    Left = -1
+    Top = 141
+    Width = 841
     Height = 201
     Font.Charset = HANGEUL_CHARSET
     Font.Color = clWindowText
@@ -59,11 +60,11 @@ object MainForm: TMainForm
     Zoom = 100
   end
   object BaseURIEdit: TEdit
-    Left = 64
-    Top = 21
+    Left = 50
+    Top = 26
     Width = 289
     Height = 21
     TabOrder = 3
-    Text = 'http://localhost:8080/api/board/all'
+    Text = 'http://senspond.iptime.org/blog/api/user'
   end
 end

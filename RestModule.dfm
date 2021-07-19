@@ -42,13 +42,16 @@ object Rest: TRest
   end
   object ClientDataSet: TClientDataSet
     Aggregates = <>
+    FieldDefs = <>
+    IndexDefs = <>
     Params = <>
+    StoreDefs = True
     Left = 136
     Top = 176
   end
   object DataSource: TDataSource
     DataSet = ClientDataSet
     Left = 136
-    Top = 248
+    Top = 240
   end
 end

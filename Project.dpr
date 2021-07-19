@@ -13,7 +13,7 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Silver');
+  TStyleManager.TrySetStyle('Sapphire Kamri');
   Application.CreateForm(TMainForm, MainForm);
   Application.CreateForm(TRest, Rest);
   Application.Run;
